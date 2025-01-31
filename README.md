@@ -29,10 +29,10 @@ python manage.py runserver
 
 Usage
 Endpoint
-GET /me/: Retrieve a list of all ME objects in the database.
+GET /api/: Retrieve a list of all ME objects in the database.
 Example Request
 
-GET http://localhost:8000/me/
+GET http://localhost:8000/api/
 
 [
     {
