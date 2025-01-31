@@ -1,6 +1,6 @@
 from django.urls import path
-from api import views
+from api.views import ListME
 
 urlpatterns = [
-    path('', views.ME, name="me"),
+     path('', ListME.as_view(), name='list_me'),
 ]
