@@ -56,7 +56,7 @@ Models
 The ME model has the following fields:
 
 email: Email address of the person (required).
-current_datetime: The date and time the record was created (auto-generated).
+current_datetime: The current date and time(auto-generated).
 github_url: URL to the person's GitHub profile.
 API View
 The ListME view handles the retrieval of all ME objects using Django REST Framework's ListAPIView.
