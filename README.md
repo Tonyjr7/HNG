@@ -1,6 +1,6 @@
 # ME Public API
 
-This project provides an API to list all `ME` objects stored in the database. It uses Django and Django REST Framework (DRF) to serve the API.
+This project provides an API to retrieve a `ME` object stored in the database. It uses Django and Django REST Framework (DRF) to serve the API.
 
 ## Backlink
 
@@ -38,18 +38,11 @@ Example Request
 
 GET http://localhost:8000/api/
 
-[
-    {
-        "email": "example@example.com",
-        "current_datetime": "2025-01-01T12:00:00Z",
-        "github_url": "https://github.com/example"
-    },
-    {
-        "email": "another@example.com",
-        "current_datetime": "2025-01-01T13:00:00Z",
-        "github_url": "https://github.com/another"
-    }
-]
+{
+    "email": "example@example.com",
+    "current_datetime": "2025-01-01T12:00:00Z",
+    "github_url": "https://github.com/example"
+}
 
 
 Models
@@ -59,5 +52,5 @@ email: Email address of the person (required).
 current_datetime: The current date and time(auto-generated).
 github_url: URL to the person's GitHub profile.
 API View
-The ListME view handles the retrieval of all ME objects using Django REST Framework's ListAPIView.
+The ListME view handles the retrieval of one ME objects using Django REST Framework's RetrieveAPIView.
 
