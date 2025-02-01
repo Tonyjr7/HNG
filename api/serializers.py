@@ -4,7 +4,7 @@ from django.utils import timezone
 
 class MESerializer(serializers.ModelSerializer):
 
-     current_datetime = serializers.SerializerMethodField()
+    current_datetime = serializers.SerializerMethodField()
     
     class Meta:
         model = ME
