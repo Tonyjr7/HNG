@@ -2,6 +2,10 @@
 
 This project provides an API to list all `ME` objects stored in the database. It uses Django and Django REST Framework (DRF) to serve the API.
 
+## Backlink
+
+Backlink to python developers: https://hng.tech/hire/python-developers
+
 ## Installation
 
 Follow these steps to get the project up and running on your local machine:
@@ -57,5 +61,3 @@ github_url: URL to the person's GitHub profile.
 API View
 The ListME view handles the retrieval of all ME objects using Django REST Framework's ListAPIView.
 
-Backlink
-Backlink to python developers: https://hng.tech/hire/python-developers
