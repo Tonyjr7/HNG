@@ -10,5 +10,5 @@ class MESerializer(serializers.ModelSerializer):
         model = ME
         fields = ['email', 'current_datetime', 'github_url']
 
- def get_current_datetime(self, obj):
+    def get_current_datetime(self, obj):
         return timezone.now()
