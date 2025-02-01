@@ -5,7 +5,7 @@ from .models import ME
 from api.serializers import MESerializer
 
 # Create your views here.
-class LatestME(generics.RetrieveAPIView):
+class ListME(generics.RetrieveAPIView):
     queryset = ME.objects.all()
     serializer_class = MESerializer
 
